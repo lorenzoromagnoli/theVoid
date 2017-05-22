@@ -1,0 +1,34 @@
+[
+  {
+    "from": 150,
+    "duration": 200,
+    "message": "yes",
+    "position": "TOP",
+    "asset": "none",
+    "assetPosition": {
+        "x": 10,
+        "y": 10
+    }
+
+}, {
+    "from": 300,
+    "duration": 400,
+    "message": "you can do it!",
+    "position": "BOTTOM",
+    "asset": "none",
+    "assetPosition": {
+        "x": 10,
+        "y": 10
+    }
+}, {
+    "from": 400,
+    "duration": 500,
+    "message": "",
+    "position": "BOTTOM",
+    "asset": "wechat.png",
+    "assetPosition": {
+        "x": 10,
+        "y": 10
+    }
+}
+]
