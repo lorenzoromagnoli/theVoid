@@ -1,3 +1,31 @@
+// CODE FOR SERVER
+
+var express = require("express");
+var bodyParser = require("body-parser");
+var app = express();
+
+
+app.use(express.static('public'))
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get("/", function(req, res) {
+    res.send("Hello World");
+});
+
+app.put("/score", function(req, res){
+  console.log(req);
+})
+
+
+var server = app.listen(3000, function () {
+    console.log("Listening on port %s...", server.address().port);
+});
+
+
+
+//CODE FOR THE BOT
+
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
@@ -7,6 +35,8 @@ const token = '386674205:AAHVM5SohpgQF8vrhf1050tnnbtMkmpc4Cc';
 const bot = new TelegramBot(token, {polling: true});
 
 var gameLink="https://lorenzoromagnoli.github.io/theVoid/";
+
+console.log("bot started");
 
 // Matches "/echo [whatever]"
 bot.onText(/\/echo (.+)/, (msg, match) => {

@@ -2,13 +2,14 @@
   "name": "thevoid_bot",
   "version": "1.0.0",
   "description": "the bot for playing the void",
+  "license": "ISC",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "node-telegram-bot-api": "^0.27.1"
   }
 }
